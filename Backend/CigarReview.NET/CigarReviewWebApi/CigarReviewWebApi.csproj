@@ -6,7 +6,14 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CigarReview.ApplicationServices\CigarReview.ApplicationServices.csproj" />
+    <ProjectReference Include="..\CigarReview.Domain\CigarReview.Domain.csproj" />
+    <ProjectReference Include="..\CigarReview.SQLiteDatabase\CigarReview.SQLiteDatabase.csproj" />
   </ItemGroup>
 
 </Project>
