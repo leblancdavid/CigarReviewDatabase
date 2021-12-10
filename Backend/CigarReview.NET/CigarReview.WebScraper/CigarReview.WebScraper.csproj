@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AngleSharp" Version="1.0.0-alpha-844" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CigarReview.Domain\CigarReview.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
