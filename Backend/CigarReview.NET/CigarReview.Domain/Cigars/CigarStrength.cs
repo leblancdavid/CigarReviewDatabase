@@ -11,6 +11,11 @@
             Name = "Unknown";
         }
 
+        public CigarStrength(string name)
+        {
+            Name = name;
+        }
+
         public CigarStrength(string name, int value)
         {
             Name = name;

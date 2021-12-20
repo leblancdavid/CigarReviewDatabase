@@ -1,20 +1,21 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace CigarReview.WebScraper.ConsoleTests
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var scraper = new JrCigarsWebScraper();
-            var brands = scraper.GetBrands();
-            brands.Wait();
-            foreach(var brand in brands.Result)
+            var brands = await scraper.GetBrands();
+            //brands.Wait();
+            foreach(var brand in brands)
             {
                 Console.WriteLine(brand.Name);
             }
-            var cigars = scraper.Search("Romeo Julieta Reserve Churchill");
-            cigars.Wait();
+            var cigars = await scraper.Search("Romeo Julieta Reserve Churchill");
+            //cigars.Wait();
         }
     }
 }

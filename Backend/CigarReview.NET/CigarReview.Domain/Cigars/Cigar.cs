@@ -16,5 +16,31 @@
         public CigarOrigin Origin { get; private set; }
         public CigarStrength Strength { get; private set; }
 
+
+        public Cigar(string name, string description, CigarBrand brand,
+            decimal length, int ringSize,
+            CigarShape shape, CigarShade shade,
+            TobaccoType wrapper, TobaccoType binder, TobaccoType filler,
+            CigarOrigin origin, CigarStrength strength)
+        {
+            Name = name;
+            Description = description;
+            Brand = brand;
+            Length = length;
+            RingSize = ringSize;
+            Shape = shape;
+            Shade = shade;
+            Wrapper = wrapper;
+            Binder = binder;
+            Filler = filler;
+            Origin = origin;
+            Strength = strength;
+        }
+
+        private Cigar()
+        {
+
+        }
+
     }
 }
