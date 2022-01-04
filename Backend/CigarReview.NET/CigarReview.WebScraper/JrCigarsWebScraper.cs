@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CigarReview.WebScraper
 {
-    public class JrCigarsWebScraper
+    public class JrCigarsWebScraper : ICigarBrowserService
     {
         private readonly string _searchUrl = "https://www.jrcigars.com/search?lang=en_US&q=";
         private readonly string _cigarBrandsUrl = "https://www.jrcigars.com/cigars/";
